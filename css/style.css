@@ -5,4 +5,121 @@
 
 html{
     font-family: Ubuntu, serif;
+    font-size: 16pt;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    /*background: linear-gradient(to bottom right, #000000, #ffffff);*/
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #385876;
+}
+h1{
+    padding: 24px 24px;
+    transition: all 1s ease-in-out;
+}
+.inner{
+    display: flex;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+    transform: translate(-50%,-50%);
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 300px;
+    width: 600px;
+    position: relative;
+    border-radius: 150px;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    box-shadow: 0 3px 20px 5px rgba(1,1,1,0.5);
+    transition: box-shadow 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+.wrapper:hover{
+    box-shadow: 0 0 3px rgba(1,1,1,0.5);
+    transform: scale(0.98, 0.98);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    font-size: 26pt;
+    /*background-color: white;*/
+    box-shadow: 0 3px 20px 5px rgba(1,1,1,0.7);
+    transition: transform 0.3s ease-in, box-shadow 0.5s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 0 3px rgba(1,1,1,0.5);
+}
+#message{
+    background-color: #F3A712;
+    color: #FDFFFF;
+}
+#user{
+    background-color: #FCD7AD;
+    color: #FDFFFF;
+}
+#notify{
+    background-color: #DB2B39;
+    color: #FDFFFF;
+}
+#camera{
+    background-color: #A5D0A8;
+    color: #FDFFFF;
+}
+.reset{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+.clear{
+    background-color: #adff2fc7;
+}
+.animate{
+    animation: anim-up 0.5s cubic-bezier(.65,.65,.1,1.37) forwards;
+}
+@keyframes anim-up {
+    0%{
+        width: 80px;
+    }
+    100%{
+        width: 120px;
+    }
+}
+.animate-down{
+    animation: anim-down 0.3s ease-out forwards;
+}
+@keyframes anim-down {
+    0%{
+        width: 120px;
+    }
+    100%{
+        width: 80px;
+    }
 }
