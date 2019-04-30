@@ -102,7 +102,7 @@ h1{
     background-color: #adff2fc7;
 }
 .animate{
-    animation: anim-up 0.5s cubic-bezier(.65,.65,.1,1.37) forwards;
+    animation: anim-up 0.325s cubic-bezier(.65,.65,.1,1.37) forwards;
 }
 @keyframes anim-up {
     0%{
